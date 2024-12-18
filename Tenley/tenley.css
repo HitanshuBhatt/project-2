@@ -1,0 +1,77 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+footer {
+    background-color: saddlebrown;
+    padding: 10px;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+header {
+    background-color: saddlebrown;
+    color: white;
+    padding: 15px 10px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+main {
+    margin-top: 100px; /* Adjust for fixed header */
+    margin-bottom: 60px; /* Adjust for fixed footer */
+    padding: 15px;
+    overflow-y: auto;
+    margin-left: 230px; /* Adjust for fixed sidebar */
+}
+
+aside {
+    position: fixed;
+    top: 100px; /* Adjust for fixed header */
+    left: 0;
+    width: 230px;
+    background-color: #fff;
+    border-right: 1px solid #ddd;
+    padding: 10px;
+    height: calc(100vh - 160px); /* Adjust for header and footer */
+    overflow-y: auto;
+}
+
+nav a {
+    color: white;
+    margin-right: 10px;
+    text-decoration: none;
+    padding: 5px 10px;
+    border-radius: 4px;
+    background-color: #6c757d;
+}
+
+nav a:hover {
+    background-color: #5a6268;
+}
+
+.carousel-item {
+    background-color: saddlebrown;
+        position: relative;
+        text-align: center; /* Center the image horizontally */
+        height: 400px; /* Adjust based on your preference */
+    }
+
+.carousel-item img {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%); /* Centers the image both vertically and horizontally */
+        max-width: 400px;
+        max-height: 400px;
+        object-fit: contain;  /* Ensures image stays within bounds */
+    }

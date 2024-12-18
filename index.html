@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Casts of Travis</title>
+    <link rel="stylesheet" href="index/index.css"> <!--css file-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+</head>
+<body>
+    <div class="layout">
+        <header><!--header-->
+            <h1>Cat House of Travis</h1>
+            <nav class="mt-3"> <!--navbars-->
+                <a href="index.html">Home</a>
+                <a href="mona.html">Mona</a>
+                <a href="tenely.html">Tenley</a>
+                <a href="maxwell.html">Maxwell</a>
+                <a href="rocky.html">Rocky</a>
+            </nav>
+        </header>
+
+        <aside class="sidebar"><!--sidebars-->
+            <h4>Favorite Cat Poll</h4>
+            <form id="poll-form"><!--sidebars-->
+                <label for="name">Your Name:</label>
+                <input type="text" id="name" class="form-control mb-2">
+
+                <label for="favorite-cat">Favorite Cat:</label>
+                <select id="favorite-cat" class="form-select mb-2">
+                    <option value="Mona">Mona</option>
+                    <option value="Tenley">Tenley</option>
+                    <option value="Maxwell">Maxwell</option>
+                    <option value="Rocky">Rocky</option>
+                </select>
+
+                <button type="button" class="btn btn-primary w-100" onclick="updatePoll()">Vote</button>
+            </form>
+
+            <h4 class="mt-4">Poll Results</h4><!--poll counting-->
+            <ul id="poll-results" class="list-group">
+                <li class="list-group-item">Mona: 4</li>
+                <li class="list-group-item">Tenley: 6</li>
+                <li class="list-group-item">Maxwell: 7</li>
+                <li class="list-group-item">Rocky: 5</li>
+            </ul>
+            <nav class="int-navigation" aria-label="internal Navigation"><!--internal navigation-->
+                <ul>
+                    <li><a href="#mona">Mona and Tenley Fighting</a></li>
+                    <li><a href="#tra">Travelling</a></li>
+                    <li><a href="#sp">Space Making Post</a></li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="main-content"><!--main content-->
+            <h2>Welcome to Travis' Cats</h2>
+            <p>This is the main page for Travis' cats, where you can read about their lives, adventures, and quirks. Explore the blog posts or learn about each cat through their biography pages!</p>
+            <h3>Blog Posts</h3>
+            <section id="mona">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Mona and Tenley Fighting</h5>
+                    <span class="badge bg-primary">Short</span>
+                    <span class="badge bg-secondary">Mona</span>
+                    <span class="badge bg-success">Tenley</span>
+                    <span class="badge bg-info">English</span>
+                    <p class="card-text">Gosh, they sure do love to fight a lot - their personalities just clash. Mona is so anxious and shy all the time, and Tenley is young and rambunctious and loves to play, so they just don't get along sometimes! I've tried many things to help, but the best thing to do is to have my partner and I play with each of them separately and give them lots of cuddles - that does the trick! </p>
+                </div>
+            </div>
+        </section>
+         <section id="tra">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Traveling</h5>
+                    <span class="badge bg-primary">Short</span>
+                    <span class="badge bg-success">Tenley</span>
+                    <span class="badge bg-info">English</span>
+                    <p class="card-text">Dangit, I have to go to New Orleans for a conference which means leaving my poor 
+                                        little kitties behind! I can't imagine they would enjoy such a trip...Tenley is terrified 
+                                        of leaving the house. Every time I put her on a little harness to go for a walk, she panics 
+                                        and runs back inside. What a strange cat!
+                    </p>
+                </div>
+            </div>
+        </section>
+        <section id="sp">
+            <div class="card mb-3">
+                <div class="card-body">
+                    <h5 class="card-title">Space Making Post</h5>
+                    <span class="badge bg-warning text-dark">Long</span>
+                    <span class="badge bg-danger">Maxwell</span>
+                    <span class="badge bg-secondary">Latin</span>
+                    <p class="card-text">This is just to test your layout. It's a bunch of lorem ipsum, which Maxwell spoke fluently.</p>
+                    <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc egestas lobortis arcu, nec mattis 
+                        diam consectetur at. Quisque nec leo id leo aliquet finibus. Praesent ut risus mattis libero condimentum dictum
+                         imperdiet eget nibh. Donec elit erat, finibus vel rhoncus in, tincidunt ac lorem. Phasellus vestibulum ipsum et 
+                         lorem gravida, commodo accumsan magna posuere. Proin sodales egestas pellentesque. Pellentesque habitant morbi 
+                         tristique senectus et netus et malesuada fames ac turpis egestas. Etiam a nibh at est condimentum porttitor ut quis
+                          est. Donec accumsan lobortis purus, eget rhoncus tellus varius lacinia. Suspendisse potenti. Sed mollis egestas tempus.
+                           Duis a lectus libero. Nam sed est turpis. Nunc justo arcu, feugiat quis elit eu, cursus euismod mi. Curabitur rutrum 
+                           nisl libero, in elementum neque volutpat euismod. Mauris semper sollicitudin purus nec tempus.
+                    </p>
+                    <p class="card-text">
+                        Ut mattis nulla sem, ac tristique est aliquam et. Maecenas lorem velit, ornare quis aliquam sed, viverra vitae diam. 
+                        Duis et sem mi. Praesent pretium nisi interdum, ullamcorper nisl non, pharetra orci. Vestibulum ante ipsum primis in 
+                        faucibus orci luctus et ultrices posuere cubilia curae; Integer ullamcorper sit amet quam ac tincidunt. Proin eget 
+                        faucibus nisi. Donec finibus facilisis felis non consectetur. Aliquam quis volutpat tellus, vitae condimentum urna.
+                        Praesent vitae augue fringilla, pretium eros vel, ultrices lectus. 
+                    </p>
+                    <p class="card-text">
+                        Nunc eleifend mauris quam, sed vulputate ante semper vitae. Interdum et malesuada fames ac ante ipsum primis in faucibus.
+                        Curabitur varius ex et ante viverra, vel fringilla quam luctus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. 
+                        Donec quis libero non purus hendrerit tempor. Nullam libero ante, dictum et eros nec, iaculis tempus dolor. Praesent sit amet
+                         mollis velit. Suspendisse aliquet convallis sapien, ut pretium magna iaculis vitae. Donec lobortis nibh et lorem pellentesque luctus. 
+                    </p>
+                    <p class="card-text">
+                        Duis et augue laoreet, pellentesque metus in, bibendum nulla. Fusce ut ante leo. Sed ullamcorper felis at eros facilisis,
+                        nec dignissim eros lobortis. Pellentesque nec luctus lorem, sit amet facilisis sapien. Vivamus et massa tempor, mollis
+                        risus sit amet, elementum ipsum. Aliquam massa quam, maximus vitae congue ac, pretium a sapien. Nullam faucibus neque a 
+                        libero feugiat pharetra. In quis turpis eu metus pharetra volutpat. Mauris nisi felis, hendrerit sit amet erat at, 
+                        interdum lobortis nisi. Maecenas at nulla at eros varius vehicula. Mauris mollis sem orci, vel fermentum dui aliquet a.
+                        Etiam tristique sit amet velit eget iaculis. In ultrices volutpat dignissim. In mollis eros at ipsum convallis tempor.
+                        Fusce at orci ac mi elementum sollicitudin. 
+                    </p>
+                    
+                </div>
+            </div>
+        </section>
+        </main>
+        <!--footer-->
+        <footer>
+            <p>Page created by Hitanshu, Harpreet, Jay and Aman. Images supplied by Kirk.</p>
+        </footer>
+    </div>
+<!--java script-->
+    <script src="index/index.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
